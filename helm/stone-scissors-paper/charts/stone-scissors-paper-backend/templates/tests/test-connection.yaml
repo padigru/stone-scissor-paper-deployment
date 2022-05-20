@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "stone-scissors-paper-backend.fullname" . }}-test-connection"
+  labels:
+    {{- include "stone-scissors-paper-backend.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "stone-scissors-paper-backend.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never

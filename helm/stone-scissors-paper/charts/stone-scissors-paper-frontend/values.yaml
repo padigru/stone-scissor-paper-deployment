@@ -1,0 +1,39 @@
+replicaCount:
+
+image:
+  repository:
+  pullPolicy:
+  tag:
+
+imagePullSecrets: []
+nameOverride:
+fullnameOverride:
+
+serviceAccount:
+  create:
+  annotations:
+  name:
+
+podAnnotations:
+
+podSecurityContext:
+
+securityContext:
+
+service:
+  type:
+  port:
+
+resources:
+
+autoscaling:
+  enabled:
+  minReplicas:
+  maxReplicas:
+  targetCPUUtilizationPercentage:
+
+nodeSelector:
+
+tolerations:
+
+affinity:
