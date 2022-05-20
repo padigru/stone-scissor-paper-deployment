@@ -1,0 +1,18 @@
+version: '3.4'
+services:
+  stone-scissors-paper-backend:
+    container_name: stone-scissors-paper-backend
+    image: padigru/stone-scissors-paper-backend:latest
+    restart: always
+    ports:
+      - "85:8080"
+
+
+  stone-scissors-paper-frontend:
+    container_name: stone-scissors-paper-frontend
+    image: padigru/stone-scissors-paper-frontend:latest
+    restart: always
+    ports:
+      - "86:80"
+    environment:
+      - API_URL=http://localhost:85/api/v1/play
