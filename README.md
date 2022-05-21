@@ -15,4 +15,4 @@ Access the backend on port 85 and the frontend on port 86.
 
 ## Helm Chart
 
-The helm chart has two subcharts. One contains the frontend system and one the backend system.
+The helm chart has two subcharts. One contains the frontend system and one the backend system. This is a minimal helm chart and was tested on kubernetes for docker desktop.
