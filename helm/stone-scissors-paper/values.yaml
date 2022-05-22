@@ -7,16 +7,11 @@ stone-scissors-paper-backend:
   image:
     repository: padigru/stone-scissors-paper-backend
     pullPolicy: IfNotPresent
-    tag: "latest"
+    tag: ""
 
   imagePullSecrets: [ ]
   nameOverride: ""
   fullnameOverride: ""
-
-  serviceAccount:
-    create: false
-    annotations: { }
-    name: ""
 
   podAnnotations: { }
 
@@ -49,16 +44,11 @@ stone-scissors-paper-frontend:
   image:
     repository: padigru/stone-scissors-paper-frontend
     pullPolicy: IfNotPresent
-    tag: "latest"
+    tag: ""
 
   imagePullSecrets: [ ]
   nameOverride: ""
   fullnameOverride: ""
-
-  serviceAccount:
-    create: false
-    annotations: { }
-    name: ""
 
   podAnnotations: { }
 

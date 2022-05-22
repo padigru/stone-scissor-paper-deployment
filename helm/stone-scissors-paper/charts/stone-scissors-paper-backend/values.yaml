@@ -3,16 +3,11 @@ replicaCount:
 image:
   repository:
   pullPolicy:
-  tag: "latest"
+  tag:
 
 imagePullSecrets:
 nameOverride:
 fullnameOverride:
-
-serviceAccount:
-  create:
-  annotations:
-  name:
 
 podAnnotations:
 

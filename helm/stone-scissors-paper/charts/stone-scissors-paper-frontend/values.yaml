@@ -9,11 +9,6 @@ imagePullSecrets: []
 nameOverride:
 fullnameOverride:
 
-serviceAccount:
-  create:
-  annotations:
-  name:
-
 podAnnotations:
 
 podSecurityContext:
