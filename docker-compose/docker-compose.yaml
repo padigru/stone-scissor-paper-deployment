@@ -2,7 +2,7 @@ version: '3.4'
 services:
   stone-scissors-paper-backend:
     container_name: stone-scissors-paper-backend
-    image: padigru/stone-scissors-paper-backend:latest
+    image: padigru/stone-scissors-paper-backend:1.0.0
     restart: always
     ports:
       - "85:8080"
@@ -10,7 +10,7 @@ services:
 
   stone-scissors-paper-frontend:
     container_name: stone-scissors-paper-frontend
-    image: padigru/stone-scissors-paper-frontend:latest
+    image: padigru/stone-scissors-paper-frontend:1.0.0
     restart: always
     ports:
       - "86:80"
