@@ -16,3 +16,5 @@ services:
       - "86:80"
     environment:
       - API_URL=http://localhost:85/api/v1/play
+    volumes:
+      - ./conf:/etc/nginx/conf.d
